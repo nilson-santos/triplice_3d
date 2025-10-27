@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tríplice 3D - Links</title>
+    <meta name="description" content="Se você pode imaginar, nós podemos imprimir! Conecte-se conosco através das nossas redes sociais.">
+    <meta name="author" content="Tríplice 3D">
+    
+    <meta property="og:title" content="Tríplice 3D - Links">
+    <meta property="og:description" content="Se você pode imaginar, nós podemos imprimir! Conecte-se conosco através das nossas redes sociais.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@lovable_dev">
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <main class="main-content">
+            <!-- Logo -->
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='images/triplice3d-logo.png') }}" alt="Tríplice 3D Logo" class="logo">
+            </div>
+
+            <!-- Tagline -->
+            <p class="tagline">
+                🧠💡 Se você pode imaginar, nós podemos imprimir! ⚙️✨
+            </p>
+
+            <!-- Social Links -->
+            <div class="links-container">
+                <a href="{{ LINK_WHATSAPP }}" target="_blank" rel="noopener noreferrer" class="social-link whatsapp">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/>
+                        <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/>
+                    </svg>
+                    <span class="link-text">WhatsApp</span>
+                </a>
+                
+                <a href="{{ LINK_INSTAGRAM }}" target="_blank" rel="noopener noreferrer" class="social-link instagram">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                    </svg>
+                    <span class="link-text">Instagram</span>
+                </a>
+                
+                <a href="{{ LINK_SITE }}" target="_self" rel="noopener noreferrer" class="social-link website">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+                        <path d="M2 12h20"/>
+                    </svg>
+                    <span class="link-text">Nosso Site</span>
+                </a>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>© <script>document.write(new Date().getFullYear());</script> Tríplice 3D - Todos os direitos reservados</p>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

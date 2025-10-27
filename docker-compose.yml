@@ -1,0 +1,25 @@
+services:
+  triplece3d:
+    build: .
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD-SHELL", "curl --silent --fail localhost:8000/health-check || exit 1" ]
+      interval: 10s
+      timeout: 10s
+      retries: 3
+    ports:
+      - 8000:8000
+    networks:
+      - front-end
+    labels:
+      traefik.enable: "true"
+      traefik.http.routers.triplice3d.rule: "Host(`triplice3d.com.br`)"
+      traefik.http.routers.triplice3d.entrypoints: "websecure"
+#      traefik.http.routers.triplice3d.middlewares: "https-only"
+      traefik.http.routers.triplice3d.tls.certresolver: "myresolver"
+      traefik.http.services.triplice3d.loadbalancer.server.port: "8000"
+    command: sh -c "gunicorn -w 3 -t 60 -b 0.0.0.0:8000 app:app"
+
+networks:
+  front-end:
+    external: true
