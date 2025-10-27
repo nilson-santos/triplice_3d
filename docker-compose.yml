@@ -7,8 +7,6 @@ services:
       interval: 10s
       timeout: 10s
       retries: 3
-    ports:
-      - 8000:8000
     networks:
       - front-end
     labels:
