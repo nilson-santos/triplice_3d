@@ -24,7 +24,7 @@ def termos():
     )
 
 
-@app.route('/flask-health-check')
+@app.route('/health-check')
 def flask_health_check():
     return "success"
 

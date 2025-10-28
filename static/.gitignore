@@ -1,0 +1,63 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+env/
+venv/
+ENV/
+env.bak/
+.venv/
+*.spec
+
+# === Flask ===
+instance/
+*.db
+*.sqlite3
+*.log
+*.pid
+
+# Arquivos de configuração locais
+config.py
+.env
+.env.*
+
+# === PyCharm / JetBrains ===
+.idea/
+*.iml
+out/
+
+# === Sistema Operacional ===
+.DS_Store
+Thumbs.db
+
+# === Testes e Cobertura ===
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+test-results/
+
+# === Outros ===
+*.bak
+*.swp
+*.swo
+
+# === Docker ===
+*.pid
+*.tar
+.dockerignore
+docker-compose.override.yml
