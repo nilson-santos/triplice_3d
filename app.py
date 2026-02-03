@@ -8,7 +8,7 @@ def index():
         "index.html",
         LINK_WHATSAPP="https://wa.me/554591080886",
         LINK_INSTAGRAM="https://www.instagram.com/triplice.3d/",
-        LINK_SITE="#"
+        LINK_SITE="https://store.triplice3d.com.br/"
     )
 
 
